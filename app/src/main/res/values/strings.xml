@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LocalNetworkApp</string>
+
+    <!-- TextViews-->
+    <string name="tv.chooseConnection">Choose connection type:</string>\
+
+
+    <!-- Buttons-->
+    <string name="btn.createConnection">Create network</string>
+    <string name="btn.findPeers">Connect to existing network</string>
+</resources>
