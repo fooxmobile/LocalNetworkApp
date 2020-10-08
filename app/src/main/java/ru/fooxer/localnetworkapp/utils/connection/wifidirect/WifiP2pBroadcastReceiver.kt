@@ -1,4 +1,4 @@
-package ru.fooxer.localnetworkapp
+package ru.fooxer.localnetworkapp.utils.connection.wifidirect
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -7,6 +7,7 @@ import android.net.wifi.p2p.WifiP2pDeviceList
 import android.net.wifi.p2p.WifiP2pManager
 import android.util.Log
 import androidx.core.content.ContextCompat.getSystemService
+import ru.fooxer.localnetworkapp.ui.BasePresenter
 import ru.fooxer.localnetworkapp.ui.main.MainActivity
 import ru.fooxer.localnetworkapp.ui.main.MainPresenter
 
@@ -23,9 +24,8 @@ import ru.fooxer.localnetworkapp.ui.main.MainPresenter
 
 class WifiP2pBroadcastReceiver(
     private val manager: WifiP2pManager?,
-    private val channel: WifiP2pManager.Channel,
-    //private val activity: MainActivity //TODO: replace with presenter
-    private val presenter: MainPresenter
+    private val channel: WifiP2pManager.Channel?,
+    //private val presenter: BasePresenter
 ): BroadcastReceiver() {
 
 
